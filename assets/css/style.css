@@ -168,16 +168,16 @@ h1 .myName {
     filter: brightness(100%);
 }
 #box1 {
-    background-image: url(./assets/images/02-portfolio-2.jpg);
+    background-image: url("./assets/images/02-portfolio-2.jpg");
 }
 #box2 {
-    background-image: url(./assets/images/02-portfolio-3.jpg);
+    background-image: url("./assets/images/02-portfolio-3.jpg");
 }
 #box3 {
-    background-image: url(./assets/images/02-portfolio-4.jpg);
+    background-image: url("./assets/images/02-portfolio-4.jpg");
 }
 #box4 {
-    background-image: url(./assets/images/02-portfolio-1.jpg);
+    background-image: url("./assets/images/02-portfolio-1.jpg");
 }
 .myWorkSm1 {
     display: flex;
