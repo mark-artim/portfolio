@@ -13,7 +13,7 @@ section h2 {
     font-size: 18px;
     font-weight: 600;
 }
-@media (min-width: 40em) {
+@media (min-width: 50em) {
     .header a {
         font-size: 1.5em;
     }
@@ -46,7 +46,7 @@ h1 .myName {
     border-bottom: 7px solid currentColor;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 50em) {
     .myName {
         font-size: 2.5em;
     }
@@ -73,7 +73,7 @@ h1 .myName {
     color: white;
     margin-left: 5%;
 }
-@media (min-width: 40em) {
+@media (min-width: 50em) {
     .hero {
         align-items: flex-end;
     }
@@ -87,7 +87,7 @@ h1 .myName {
     min-width: 5em;
 }
 
-/* *** BEGIN ABOUT *** */
+/* *** BEGIN ABOUT SECTION *** */
 
 .about {
     display: flex;
@@ -99,7 +99,7 @@ h1 .myName {
     margin: 0% 10% 5% 10%;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 50em) {
     .about {
         flex-direction: row;
         align-items: center;
@@ -119,14 +119,14 @@ h1 .myName {
     }    
 }
 
-/* *** BEGIN MY WORK *** */
+/* *** BEGIN WORK SECTION *** */
 
 .myWorkLg {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-@media (min-width: 40em) {
+@media (min-width: 50em) {
     .myWorkLg {
         flex-direction: row;
     }
@@ -137,21 +137,41 @@ h1 .myName {
     border-width: 5px;
     border-style: solid;
 }
-
+.boxBig {
+    display: block;
+    width: 62.5vw;
+    border: lightblue;
+    border-width: 5px;
+    border-style: solid;
+    height: 51vh;
+    opacity: .7;
+    transition-property: opacity;
+    transition-duration: 1s;
+    background-size: cover;
+}
+.boxBig p {
+    color: white;
+    background-color: darkblue;
+    display: inline-block;
+    padding: 8px;
+}
+.boxBig:hover {
+    opacity: 1;
+}
 .box {
     display: block;
-    /* width: 30vw;
-    height: 24vh; */
     width: 62.5vw;
     height: 24vh;
-    filter: brightness(80%);
+    opacity: .7;
+    transition-property: opacity;
+    transition-duration: 1s;
     background-size: cover;
     margin: .5em;
     border: lightblue;
     border-width: 5px;
     border-style: solid;
 }
-@media (min-width: 40em) {
+@media (min-width: 50em) {
     .box {
         flex-direction: row;
         width: 30vw;
@@ -165,26 +185,31 @@ h1 .myName {
     padding: 8px;
 }
 .box:hover {
-    filter: brightness(100%);
+    opacity: 1;
+    /* filter: brightness(100%); */
+    /* -webkit-filter: brightness(130%); */
+}
+#boxBig {
+    background-image: url("../images/02-portfolio-1.jpg");
 }
 #box1 {
     background-image: url("../images/02-portfolio-2.jpg");
 }
 #box2 {
-    background-image: url("/assets/images/02-portfolio-3.jpg");
+    background-image: url("../images/02-portfolio-3.jpg");
 }
 #box3 {
-    background-image: url("/assets/images/02-portfolio-4.jpg");
+    background-image: url("../images/02-portfolio-4.jpg");
 }
 #box4 {
-    background-image: url("/assets/images/02-portfolio-1.jpg");
+    background-image: url("../images/02-portfolio-1.jpg");
 }
 .myWorkSm1 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-@media (min-width: 40em) {
+@media (min-width: 50em) {
     .myWorkSm1 {
         flex-direction: row;
         margin: 2% 0% 2% 0%;
@@ -196,7 +221,7 @@ h1 .myName {
     flex-direction: column;
     align-items: center;
 }
-@media (min-width: 40em) {
+@media (min-width: 50em) {
     .myWorkSm2 {
         flex-direction: row;
         margin: 2% 0% 2% 0%;
@@ -204,54 +229,33 @@ h1 .myName {
         flex-wrap: wrap;
     }
 }
-/* .myWorkSm2 Img {
-    width: 30vw;
-    height: 20vh;
-    margin: .5em;
-    border: lightblue;
-    border-width: 5px;
-    border-style: solid;
-} */
 
-
-/* @media (min-width: 40rem) {
-    .myWorkImgSm {
-        width: 75vw;
-        border: red;
-    }
-} */
-
+/* *** BEGIN CONTACT SECTION *** */
 
 .addresses {
     display: flex;
 }
     
 .address {
-    display: block;
-    height: 10px;
-    /* width: 225px; */
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 900;
-    color: white;
-    background-color: #8510d8;
-    padding: 1% 10% 10% 10%;
-    margin: 1% 2% 5% 2%;
-    /* margin-right: 20px;
-    margin-bottom: 50px; */
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    color: black;
+    margin: 1% 2% 5% 1%;
+    justify-content: space-between;
 }
 .contact {
-    
     display: flex;
     flex-direction: column;
     align-items: center;
     max-height: 10px;
+    margin-top: 5%;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 50em) {
     .contact {
         flex-direction: row;
+    }
+    .address {
+        font-size: 1.0em;
     }
 }
