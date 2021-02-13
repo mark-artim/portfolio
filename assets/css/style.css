@@ -10,7 +10,7 @@ section h2 {
 }
 
 .header a {
-    font-size: 18px;
+    font-size: 1.15em;
     font-weight: 600;
 }
 @media (min-width: 50em) {
@@ -26,17 +26,28 @@ section h2 {
     align-items: baseline;
     margin-bottom: 2%;
 }
+.myImage {
+    margin-left: 2%;
+    flex-grow: 0;
+}
 .myName {
     font-size: 36px;
-    flex-grow: 1;
+    flex-grow: 12;
     color: #2C3E50;
     margin-left: 2%;
-    
 }
 h1 .myName {
     margin: .25em;
 }
+img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 1.5% 0% 0% 0%;
+}
 .nav {
+    flex-grow: 0;
     text-decoration: none;
     margin: .5em;
     margin-right: 1em;
@@ -97,6 +108,7 @@ h1 .myName {
 }
 .about-text {
     margin: 0% 10% 5% 10%;
+    font-size: 1.25em;
 }
 
 @media (min-width: 50em) {
@@ -186,8 +198,6 @@ h1 .myName {
 }
 .box:hover {
     opacity: 1;
-    /* filter: brightness(100%); */
-    /* -webkit-filter: brightness(130%); */
 }
 #boxBig {
     background-image: url("../images/02-portfolio-1.jpg");
