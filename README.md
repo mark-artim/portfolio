@@ -3,7 +3,7 @@ Mark Artim Portfolio Page (Wash U Bootcamp)
 
 ## Description 
 
-This is currently a single web page with links to other pages. It highlights work done by Mark Artim.
+This is currently a single web page with links to other pages. It highlights work done by Mark Artim. This page although it looks similar in many ways to teh example provided was coded 100% by hand from scrath. I beleive that having artistic latitude could be an excuse as to why somethign works differently on my version as opposed to the model that the "client" expected from teh creative team. 
 
 ## Table of Contents (Optional)
 
